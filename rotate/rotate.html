@@ -1,56 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title></title>
+
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
-    <style>
-      html {
-        background-color: rgb(36, 35, 35);
-      }
-      .t01 {
-        overflow: hidden;
-        width: 100%;
-        height: 10rem;
-        border: 2px solid white;
-        position: relative;
-      }
-      .rotat {
-        width: 100%;
-        height: 10rem;
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html {
+        background-color: black;
+    }
+    body {
+  font-family: "Poppins", sans-serif;
+  background-color: #242329;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+    .title {
+        color: aqua;
+    }
+
+    .rotate-words {
+        display: inline;
+        width: max-content;
+        background-color: #bb93fc;
+        border-radius: 0.1rem;
         position: absolute;
-        background-color: #6f2dda;
-        text-align: center;
-      }
-      .rotat span {
-        width: 30rem;
-        font-size: 5rem;
-        padding-top: 2rem;
-        position: absolute;
-        right: -20%;
-        opacity: 0;
-        transform: translateX(0px);
-        animation: abolfazl 15s var(--d) linear infinite;
-      }
-      @keyframes abolfazl {
+        transform-origin: 10% 75%;
+        animation: rotateWords 9s var(--d) linear infinite;
+    }
+    .rotate-words span {
+  width: max-content;
+  position: absolute;
+  background-color: #bb93fc;
+  padding-inline: 10px;
+  opacity: 0;
+  transform-origin: 10% 75%;
+  animation: rotateWords 9s var(--d) linear infinite;
+  left: 19rem;
+  top: -3rem;
+}
+.t01 {
+    position: relative;    
+}
+
+    @keyframes rotateWords {
         5% {
-          opacity: 1;
+            opacity: 1;
         }
-       25% {
-          opacity: 0;
-          transform: translateX(-2000px);
+
+        10%,
+        20% {
+            opacity: 1;
+            transform: rotate(3deg);
         }
-      }
-    </style>
-  </head>
-  <body>
+
+        15% {
+            transform: rotate(-1deg);
+        }
+
+        25% {
+            opacity: 0;
+            transform: translateY(90px) rotate(10deg);
+        }
+    }
+</style>
+
+<body>
     <div class="t01">
-      <div class="rotat">
-        <span style="--d: 0s">UI designer</span>
-        <span style="--d: 5s">ux designer</span>
-        <span style="--d: 10s">web developer</span>
-      </div>     
-    </div>  
-  </body>
+    <h1 class="title">Lorem, ipsum dolor
+    </h1>
+        <div class="rotate-words">
+            <span style="--d: 0s">Lorem, ipsum.1</span>
+            <span style="--d: 3s">Lorem, ipsum.2</span>
+            <span style="--d: 6s">Lorem, ipsum.3</span>
+            <span style="--d: 8s">Lorem, ipsum.4</span>
+            <span style="--d: 9s">Lorem, ipsum.5</span>
+        </div>
+    </div>
+</body>
+
 </html>
