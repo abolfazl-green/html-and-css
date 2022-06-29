@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: 90vh;
+        }
+
+        .left {
+            background: url(G:\OneDrive\Documents\GitHub\html-and-css\header-grid\img-header.jpg);
+            grid-column: 1/4;
+            background-size: cover;
+            background-position: right;
+        }
+
+        .right {
+            background-color: rgb(49, 43, 43);
+            grid-column: 4/7;
+            display: grid;
+            grid-template-columns: repeat(24, 1fr);
+            grid-template-rows: repeat(24, 1fr);
+        }
+
+        .title2 {
+            position: absolute;
+            top: 40%;
+            right: 42%;
+            text-align: center;
+            place-items: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .title {
+            background: linear-gradient(to right, white 45%, #bd0c0c 36%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+           
+        }
+        .wellcome {
+            color: aliceblue;
+            grid-column: 11/18;
+            grid-row: 4/6;
+            font-size: 3rem;
+            font-family:  'Dancing Script', cursive;
+
+        }
+        .paragraph {
+            color: aliceblue;
+            grid-column: 7/21;
+            grid-row: 7/12;
+            font-size: 2rem;
+            font-family:  'Dancing Script', cursive;
+        }
+        .btn {
+            grid-column: 10/18;
+            grid-row: 20/22;
+            align-self: center;
+            padding: 15px;
+            border-radius: 6px;
+            border: none;
+            color: rgb(255, 0, 119);
+            background-color: rgb(255, 255, 255);
+        }
+        .btn:hover {
+            color: white;
+            background-color: rgb(255, 0, 119);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title2">
+            <h1 class="title"> Creative Header <br> Design</h1>
+        </div>
+        <div class="header">
+            <div class="left"></div>
+            <div class="right">
+                <h1 class="wellcome">Wellcome</h1>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dolorem culpa delectus
+                    sed libero voluptas laborum accusantium harum exercitationem quas soluta earum aspernatur
+                    perspiciatis neque quasi dolor corporis modi vitae!</p>
+                <button class="btn">get started</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
