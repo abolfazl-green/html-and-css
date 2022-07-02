@@ -1,0 +1,94 @@
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;            
+        }        
+       .header {
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(90deg, #5e5c5cde 0%, #9dc5c3d0 55%, transparent 40%), url(/html-and-css-project/htmlandcss/header2.html/header.jpg);
+        background-position: center ;    
+        background-size: cover;                  
+       }
+       .vab-bar {
+        display: flex;
+        justify-content: center;        
+       }
+       .ul-bar {
+        list-style: none;
+        margin-top: 1rem;
+       }
+       .li-navbar {
+        display: inline-block;
+        font-size: 1.5rem;
+        font-family:  'Prompt', sans-serif;
+        font-weight: 900;
+        margin-left: 2rem;
+        cursor: pointer;
+        color: #ffffff;
+        font-weight: bold;
+       }
+       .li-navbar:hover {
+        border-bottom: 5px solid #0db4ac;
+        transition: all .2s;
+       }
+       .liks {
+        display: inline-block;
+        background-color: #0db4ac;
+        font-family: 'Prompt', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 900;
+        padding: .8rem;
+        border-radius: 15px;
+        cursor: pointer;
+        color: #ffffff;
+       }
+       .liks:hover {
+        background-color: #029b93;
+        transition: all .5s ease;
+       }
+       .texts {
+        display: grid;
+        width: 55%;
+        height: 100vh;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+       }
+       .title-h1 {
+        grid-row: 2/3;
+        grid-column: 2/6;
+        font-family: 'Sriracha', cursive;
+        font-size: 4;
+       }
+       .title-h1::selection {
+        background-color: aqua;
+       }
+       .info {
+        grid-row: 3/4;
+        grid-column: 2/7;
+        font-family: 'Smooch', cursive;
+        font-weight: 600;
+        font-size: 3.2vmin;
+       }
+       .btn {
+        grid-row: 4/5;
+        grid-column: 2/5;
+        width: 20vmin;
+        padding: .7rem;
+        border-radius: 5px;
+        border: none;
+        align-self: center;
+        background-color: #0db4ac;
+        color: #ffffff;
+        font-size: 2vmin;
+        cursor: pointer;
+        font-family:'Prompt', sans-serif;
+        font-weight: bold;
+       }
+       .btn:hover {
+        background-color: #006e69;
+        transition: all .5s;
+       }
+       .fa-arrow-right {
+        margin-left: 0.3rem;
+       }
